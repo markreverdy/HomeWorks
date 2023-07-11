@@ -1,0 +1,15 @@
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\bin\Debug\net6.0\HM_7.exe
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\bin\Debug\net6.0\HM_7.deps.json
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\bin\Debug\net6.0\HM_7.runtimeconfig.json
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\bin\Debug\net6.0\HM_7.dll
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\bin\Debug\net6.0\HM_7.pdb
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\obj\Debug\net6.0\HM_7.csproj.AssemblyReference.cache
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\obj\Debug\net6.0\HM_7.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\obj\Debug\net6.0\HM_7.AssemblyInfoInputs.cache
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\obj\Debug\net6.0\HM_7.AssemblyInfo.cs
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\obj\Debug\net6.0\HM_7.csproj.CoreCompileInputs.cache
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\obj\Debug\net6.0\HM_7.dll
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\obj\Debug\net6.0\refint\HM_7.dll
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\obj\Debug\net6.0\HM_7.pdb
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\obj\Debug\net6.0\HM_7.genruntimeconfig.cache
+D:\ProgramFiles\Microsoft Visual Studio\repos\HM_7\obj\Debug\net6.0\ref\HM_7.dll
