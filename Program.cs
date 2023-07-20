@@ -1,33 +1,40 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace HomeWork_4
+namespace Module2_Ex4
 {
-    /// <summary>
-    /// Randomize numbers in 2 arrays.
-    /// </summary>
-    internal class Program
+    public class Program
     {
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Random rand = new Random();
-            int[] x1 = new int[20];
-            for (int i = 0; i < x1.Length; i++)
+            var serviceProvider = new ServiceCollection()
+            .AddTransient<IVegetable, Tomato>()
+            .AddTransient<IVegetable, Cucumber>()
+            .AddTransient<IVegetable, Lettuce>()
+            .BuildServiceProvider();
+
+            var tomato = serviceProvider.GetService<IVegetable>();
+            tomato.Weight = 200;
+
+            var cucumber = serviceProvider.GetService<IVegetable>();
+            cucumber.Weight = 150;
+
+            var lettuce = serviceProvider.GetService<IVegetable>();
+            lettuce.Weight = 100;
+
+            var salad = new Salad(new IVegetable[] { tomato, cucumber, lettuce });
+
+            Console.WriteLine($"Total calories: {salad.CalculateTotalCalories()}");
+
+            var veggies = salad.FindByCalories(20, 30);
+            foreach (var veggie in veggies)
             {
-                x1[i] = rand.Next(0, 27);
-                if (x1[i] % 2 == 0)
-                {
-                    Console.WriteLine(x1[i]);
-                }
+                Console.WriteLine($"Found: {veggie.Name} with total calories: {veggie.CalculateTotalCalories()}");
             }
 
-            Console.WriteLine("-----------------------------------------------");
-            for (int g = 0; g < x1.Length; g++)
+            salad.SortByCalories();
+            foreach (var veggie in salad.Vegetables)
             {
-                x1[g] = rand.Next(0, 27);
-                if (x1[g] % 2 == 1)
-                {
-                    Console.WriteLine(x1[g]);
-                }
+                Console.WriteLine($"{veggie.Name} with total calories: {veggie.CalculateTotalCalories()}");
             }
         }
     }
